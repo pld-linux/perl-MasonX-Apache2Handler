@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Apache2Handler
+%define		pdir	MasonX
+%define		pnam	Apache2Handler
 Summary:	MasonX::Apache2Handler - experimental (alpha) Mason/mod_perl2 interface
 Summary(pl):	MasonX::Apache2Handler - eksperymentalny (alfa) interfejs Mason/mod_perl2
 Name:		perl-MasonX-Apache2Handler
