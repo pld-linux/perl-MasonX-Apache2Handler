@@ -6,7 +6,7 @@
 %define	pdir	MasonX
 %define	pnam	Apache2Handler
 Summary:	MasonX::Apache2Handler - experimental (alpha) Mason/mod_perl2 interface
-#Summary(pl):	
+Summary(pl):	MasonX::Apache2Handler - eksperymentalny (alfa) interfejs Mason/mod_perl2
 Name:		perl-MasonX-Apache2Handler
 Version:	0.05
 Release:	1
@@ -18,10 +18,10 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	apache-mod_perl >= 1.99_1
 BuildRequires:	perl(Apache::Cookie) >= 2.02-dev
 BuildRequires:	perl(Apache::Request) >= 2.02-dev
-BuildRequires:	perl(HTML::Mason) >= 1.25
-BuildRequires:	perl(mod_perl) >= 1.991
+BuildRequires:	perl-HTML-Mason >= 1.25
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,8 +33,12 @@ mod_perl2 environment.
 MasonX::Apache2Handler is highly experimental (alpha) and should only
 be used in a test environment.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ jest dodatkiem do Masona umo¿liwiaj±cym Masonowi dzia³anie w
+czystym ¶rodowisku mod_perl2. 
+
+MasonX::Apache2Handler jest bardzo eksperymentalny (alfa) i powinien
+byæ u¿ywany tylko w ¶rodowiskach testowych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -61,6 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README htdocs/*.{html,css,gif}
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/MasonX/*.pm
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
