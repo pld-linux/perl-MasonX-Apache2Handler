@@ -19,9 +19,8 @@ BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	apache-mod_perl >= 1.99_1
-BuildRequires:	perl(Apache::Cookie) >= 2.02-dev
-BuildRequires:	perl(Apache::Request) >= 2.02-dev
 BuildRequires:	perl-HTML-Mason >= 1.25
+BuildRequires:	perl-libapreq2 >= 2.02
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
