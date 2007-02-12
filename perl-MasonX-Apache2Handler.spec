@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Apache2Handler
 Summary:	MasonX::Apache2Handler - experimental (alpha) Mason/mod_perl2 interface
-Summary(pl):	MasonX::Apache2Handler - eksperymentalny (alfa) interfejs Mason/mod_perl2
+Summary(pl.UTF-8):   MasonX::Apache2Handler - eksperymentalny (alfa) interfejs Mason/mod_perl2
 Name:		perl-MasonX-Apache2Handler
 Version:	0.05
 Release:	1
@@ -32,12 +32,12 @@ mod_perl2 environment.
 MasonX::Apache2Handler is highly experimental (alpha) and should only
 be used in a test environment.
 
-%description -l pl
-Ten modu≥ jest dodatkiem do Masona umoøliwiaj±cym Masonowi dzia≥anie w
-czystym ∂rodowisku mod_perl2. 
+%description -l pl.UTF-8
+Ten modu≈Ç jest dodatkiem do Masona umo≈ºliwiajƒÖcym Masonowi dzia≈Çanie w
+czystym ≈õrodowisku mod_perl2. 
 
 MasonX::Apache2Handler jest bardzo eksperymentalny (alfa) i powinien
-byÊ uøywany tylko w ∂rodowiskach testowych.
+byƒá u≈ºywany tylko w ≈õrodowiskach testowych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
