@@ -9,7 +9,7 @@ Summary:	MasonX::Apache2Handler - experimental (alpha) Mason/mod_perl2 interface
 Summary(pl.UTF-8):	MasonX::Apache2Handler - eksperymentalny (alfa) interfejs Mason/mod_perl2
 Name:		perl-MasonX-Apache2Handler
 Version:	0.05
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -18,7 +18,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	apache-mod_perl >= 1.99_1
+BuildRequires:	apache-mod_perl >= 1:2
 BuildRequires:	perl-HTML-Mason >= 1.25
 BuildRequires:	perl-libapreq2 >= 2.02
 %endif
