@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	MasonX
 %define		pnam	Apache2Handler
+%include	/usr/lib/rpm/macros.perl
 Summary:	MasonX::Apache2Handler - experimental (alpha) Mason/mod_perl2 interface
 Summary(pl.UTF-8):	MasonX::Apache2Handler - eksperymentalny (alfa) interfejs Mason/mod_perl2
 Name:		perl-MasonX-Apache2Handler
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	64fbb393e3e9a3a28e39827e74e9b11d
+URL:		http://search.cpan.org/dist/MasonX-Apache2Handler/
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -34,7 +35,7 @@ be used in a test environment.
 
 %description -l pl.UTF-8
 Ten moduł jest dodatkiem do Masona umożliwiającym Masonowi działanie w
-czystym środowisku mod_perl2. 
+czystym środowisku mod_perl2.
 
 MasonX::Apache2Handler jest bardzo eksperymentalny (alfa) i powinien
 być używany tylko w środowiskach testowych.
